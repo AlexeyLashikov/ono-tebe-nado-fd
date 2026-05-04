@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
@@ -37,9 +38,10 @@
         <address class="address">наб. Принсенграхт 263- 265, Амстердам</address>
       </div>
     </header>
+    <!-- Конец блока Header -->
     <main>
-      <section class="cover">
-        <div class="overlay"></div>
+      <!-- Обложка -->
+      <section class="cover overlay">
         <h1 class="cover__title">
           <span class="aligned-text aligned-text_left letter-spacing-extended">Он<span class="no-letter-spacing">о</span></span>
           <span class="aligned-text aligned-text_center letter-spacing-extended">теб<span class="no-letter-spacing">е</span></span>
@@ -52,13 +54,14 @@
           <button class="bet-button">сделать ставку</button>
         </div>
       </section>
+      <!-- Конец обложки -->
+      <!-- Блок лоты -->
       <section class="lots">
         <h2 class="section-title lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card card_type_film">
-                <div class="overlay"></div>
+              <article class="card card_type_film overlay">
                 <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -69,8 +72,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card card_type_book">
-                <div class="overlay"></div>
+              <article class="card card_type_book overlay">
                 <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
@@ -84,8 +86,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card card_type_picture">
-                <div class="overlay"></div>
+              <article class="card card_type_picture overlay">
                 <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
@@ -99,6 +100,8 @@
         </ul>
         <a class="lots__look-more-link" href="#">посмотреть больше</a>
       </section>
+      <!-- Конец блока лоты -->
+      <!-- Блок «Об аукционе» -->
       <section class="about">
         <div class="about__column about__column_logo">
           <div class="about__logo">
@@ -127,7 +130,9 @@
           </div>
         </div>
       </section>
+      <!-- Конец блока «Об аукционе» -->
     </main>
+    <!-- Блок footer -->
     <footer class="footer">
       <div class="address footer__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -165,5 +170,6 @@
         </li>
       </ul>
     </footer>
+    <!-- Конец блока footer -->
   </body>
 </html>
