@@ -29,7 +29,7 @@ body {
   font-size: 18px;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item:first-child {
   list-style: none;
 }
 
@@ -61,6 +61,10 @@ body {
   font-style: normal;
 }
 
+.address__text {
+  font-style: normal;
+}
+
 .header__address {
   /* этот класс размещает адрес внутри сетки хэдэра */
   justify-self: end;
@@ -70,8 +74,13 @@ body {
 
 .cover {
   position: relative;
-  height: 757px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 757px;
   background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
@@ -98,17 +107,13 @@ body {
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
-  top: 105px;
-  padding: 50px;
+  padding: 155px 50px 50px;
   line-height: 1.35;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text {
   display: block;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 0.3em;
 }
 
 .no-letter-spacing {
@@ -128,15 +133,11 @@ body {
 }
 
 .cover__description {
-  /* абсолютное позиционирование прижимает подпись и кнопку к низу обложки */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   z-index: 2;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
+  margin: 0px 50px 50px 50px;
 }
 
 .cover__description-text {
